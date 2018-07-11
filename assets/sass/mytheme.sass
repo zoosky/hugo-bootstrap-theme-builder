@@ -1,0 +1,11 @@
+{{- $params := .Site.Params -}}
+{{- $colors := index $params "colors" -}}
+{{- $allColors := slice $colors -}}
+{{- range $allColors -}}
+{{- range $k, $v := . -}}
+{{ printf "$%s" $k }}: {{ $v }}
+{{ end -}}
+{{- end -}}
+
+@import bootstrap/bootstrap
+@import custom-styles
