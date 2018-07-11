@@ -1,3 +1,4 @@
+// Custom colors set in config.yaml
 {{- $params := .Site.Params -}}
 {{- $colors := index $params "colors" -}}
 {{- $allColors := slice $colors -}}
@@ -7,5 +8,11 @@
 {{ end -}}
 {{- end -}}
 
+// Other custom logic
+
+// Bootstrap is imported once all variables have been set
 @import bootstrap/bootstrap
-@import custom-styles
+
+// Add custom styles here:
+// .my-custom-class
+//   border: 1px solid $primary

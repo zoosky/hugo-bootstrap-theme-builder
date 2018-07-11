@@ -1,9 +1,9 @@
 {{- $cssOpts := (dict "targetPath" "css/style.css" "sourceMapsEnabled" true) -}}
 {{- $css := resources.Get "sass/mytheme.sass" | resources.ExecuteAsTemplate "sass/mytheme.sass" . | toCSS $cssOpts | minify | fingerprint -}}
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
 <head>
-  <title>Bootstrap 4 Theme Kit</title>
+  <title>{{ .Site.Title }}</title>
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
