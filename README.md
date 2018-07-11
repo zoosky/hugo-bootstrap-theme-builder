@@ -10,7 +10,10 @@ To run this theme builder, make sure that you have [Hugo](https://gohugo.io) ins
 git clone https://github.com/lucperkins/hugo-bootstrap-theme-builder
 cd hugo-bootstrap-theme-builder
 hugo server
+open http://localhost:1313
 ```
+
+This will open your browser (you may need to refresh) to the theme builder. Now you can [customize](#customization) the theme however you wish.
 
 ## Customization
 

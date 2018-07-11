@@ -1,5 +1,5 @@
 {{- $cssOpts := (dict "targetPath" "css/style.css" "sourceMapsEnabled" true) -}}
-{{- $css := resources.Get "sass/mytheme.sass" | resources.ExecuteAsTemplate "sass/mytheme.sass" . | toCSS $cssOpts | minify | fingerprint -}}
+{{- $css := resources.Get "sass/theme.sass" | resources.ExecuteAsTemplate "sass/theme.sass" . | toCSS $cssOpts | minify | fingerprint -}}
 <!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode }}">
 <head>
